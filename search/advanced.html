@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Image Search</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="statics/styles.css">
+    </head>
+    <body>
+
+        <header>
+            <ul>
+                <li><a href="index.html">Go to Home Page</a></li>  
+            </ul>  
+        </header>
+        <div class="advanceSearchLogo">
+            <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+
+        <form action="https://www.google.com/search" target="_blank">
+ 
+            <div class="row">
+                <div class="column searchFieldLabel advancedSearchTitle">
+                    <label>Advanced Seach</label> 
+                </div>
+                 <div class="column searchField">
+                 </div>
+ 
+                 <div class="column searchFieldDescription"></div>
+            </div>
+
+            <div class="row" style="border-bottom: 1px solid #ebebeb;font-weight: inherit; font-style: inherit;"></div>
+
+            <div class="row">
+                <div class="column searchFieldLabel">
+                    Show pages that contain...
+                </div>
+                 <div class="column searchField"></div>
+                 <div class="column searchFieldDescription" style="color: #777">
+                     To do this in the search box
+                 </div>
+            </div>
+
+            <div class="row">
+                <div class="column searchFieldLabel">
+                    <label for="as_q">all these words:</label>
+                </div>
+                
+                <div class="column searchField">
+                    <input id="as_q" type="text" class="advancedSearchInput" title="Search" name="as_q">
+                </div>
+                <div class="column searchFieldDescription">
+                    <span class="exampleDesc">Some description 1</span> <span class="searchExample">sadsadas</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column searchFieldLabel">
+                    <label for="as_epq">this exact word or phrase:</label>
+                </div>
+                <div class="column searchField">
+                    <input id="as_epq" type="text" class="advancedSearchInput" title="Search" name="as_epq">
+                </div>
+                <div class="column searchFieldDescription">
+                    <span class="exampleDesc">Some description 2</span> <span class="searchExample">sadsadas</span>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="column searchFieldLabel">
+                   <label for="as_oq">any of these words:</label> 
+                </div>
+                <div class="column searchField">
+                    <input id="as_oq" type="text" class="advancedSearchInput" title="Search" name="as_oq">
+                </div>
+
+                <div class="column searchFieldDescription">
+                    <span class="exampleDesc">Some description 3</span> <span class="searchExample">sadsadas</span>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="column searchFieldLabel">
+                   <label for="as_eq">none of these words:</label> 
+                </div>
+                <div class="column searchField">
+                    <input id="as_eq" type="text" class="advancedSearchInput" title="Search" name="as_eq">
+                </div>
+
+                <div class="column searchFieldDescription">
+                    <span class="exampleDesc">Some description 4</span> <span class="searchExample">sadsadas</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column searchFieldLabel"></div>
+                 <div class="column searchField">
+                    <button id="advancedSearchButton" type="submit" name="tbs">Advanced Search</button>
+                 </div>
+ 
+                 <div class="column searchFieldDescription"></div>
+            </div>
+        </form>
+        
+  </body>
+</html>
