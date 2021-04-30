@@ -1,0 +1,28 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>Create New page</h1>
+
+    <div>
+        <form action="{% url 'create_page' %}" method="post">
+            {% csrf_token %}
+            {% for field in form.visible_fields %}
+                <div>
+                    {{ field.errors }}
+                    {{ field.label_tag }}
+                    {{ field }}
+                </div>
+            {% endfor %}
+            <input type="submit" value="Create Page">
+        </form>
+        <div style="clear: both;">
+            <a href="{% url 'index' %}">Go to Home</a>
+        </div>
+        
+    </div>
+
+{% endblock %}
