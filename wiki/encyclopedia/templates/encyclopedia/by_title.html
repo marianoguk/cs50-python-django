@@ -6,9 +6,14 @@
 {% endblock %}
 
 {% block body %}
-    <h1>{{title}}</h1>
     <div id="pageContent">
-        {{pageContent}}
+        {% load filters_tags %}
+
+        {{ pageContent|markdown }}
+        <!--
+            {{pageContent}}
+        -->
+        
     </div>
     <a href="{% url 'index' %}">Back to Index</a>
 {% endblock %}
